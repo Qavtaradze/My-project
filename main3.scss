@@ -1,0 +1,119 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ff3399, #ff9933, #33ccff, #99ff33);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+
+    @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  #calendar {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #monthYear {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #calendarTable th {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #calendarTable td {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #calendarTable td:hover {
+    background-color: #f7f7f7;
+  }
+  
+  #calendarTable td.today {
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 50%;
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #prevBtn:focus,
+  #nextBtn:focus {
+    outline: none;
+  }
+  
+  #prevBtn:hover,
+  #nextBtn:hover {
+    color: #e74c3c;
+  }
+  
+  #addEventBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #addEventBtn:focus {
+    outline: none;
+  }
+  
+  #addEventBtn:hover {
+    background-color: #e67e22;
+  }
+  

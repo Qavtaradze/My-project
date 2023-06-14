@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <table>
+      <tr>
+        <td><button onclick="appendNumber('7')">7</button></td>
+        <td><button onclick="appendNumber('8')">8</button></td>
+        <td><button onclick="appendNumber('9')">9</button></td>
+        <td><button onclick="appendOperator('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber('4')">4</button></td>
+        <td><button onclick="appendNumber('5')">5</button></td>
+        <td><button onclick="appendNumber('6')">6</button></td>
+        <td><button onclick="appendOperator('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber('1')">1</button></td>
+        <td><button onclick="appendNumber('2')">2</button></td>
+        <td><button onclick="appendNumber('3')">3</button></td>
+        <td><button onclick="appendOperator('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber('0')">0</button></td>
+        <td><button onclick="appendNumber('.')">.</button></td>
+        <td><button onclick="calculateResult()">=</button></td>
+        <td><button onclick="appendOperator('/')">/</button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><button onclick="clearDisplay()">Clear</button></td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <a href="file:///C:/Users/Dato%20beberi/Downloads/Project%20calculator/Project%20Countdown/index2.html">
+       <button class="countdown">
+     Next project
+    </button>
+  </a> 
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
